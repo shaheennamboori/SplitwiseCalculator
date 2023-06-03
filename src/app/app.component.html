@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="billTable">
+    <div class="TableHeaders">
+      <div class="header">Item Name</div>
+      <div class="header">Quantity</div>
+      <div class="header">Price</div>
+    </div>
+    <div class="TableRows" *ngFor="let item of itemsList">
+      <input type="text" class="row" [value]="item.Name"/>
+      <input type="text" class="row" [value]="item.Quantity"/>
+      <input type="text" class="row" [value]="item.price"/>
+    </div>
+    <div class="ButtonContainer">
+      <div class="AddButton" (click)="AddItem()">
+        Add Item
+      </div>
+      <div class="NextButton" (click)="AddItem()">
+        Next
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

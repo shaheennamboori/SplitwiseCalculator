@@ -1,0 +1,45 @@
+:host {
+    .billTable {
+        max-width: 600px;
+        min-width: 600px;
+        overflow: hidden;
+        .TableHeaders {
+            display: flex;
+            .header {
+                width: 0;
+                flex-grow: 1;
+                border: 1px solid;
+            }
+        }
+        .TableRows {
+            display: flex;
+            .row{
+                width: 0;
+                flex-grow: 1;
+            }
+        }
+        .ButtonContainer{
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .AddButton {
+            padding: 2px;
+            border: 2px solid black;
+            border-radius: 6px;
+            color: brown;
+            background-color: aquamarine;
+            }
+
+            .NextButton{
+                padding: 2px;
+                margin-left: 10px;
+            border: 2px solid black;
+            color: black;
+            border-radius: 6px;
+            background-color: orange;
+            }
+        }
+        
+    }
+}
